@@ -33,6 +33,7 @@ export interface AbstractAppDetailsPreferences {
     hideManagedFields?: boolean;
     orphanedResources: boolean;
     showAppSetParent?: boolean;
+    hideStatusPanel?: boolean;
 }
 
 export interface AppDetailsPreferences extends AbstractAppDetailsPreferences {
@@ -195,6 +196,7 @@ const DEFAULT_PREFERENCES: ViewPreferences = {
         resourceView: 'manifest',
         orphanedResources: false,
         showAppSetParent: false,
+        hideStatusPanel: false,
         podView: {
             sortMode: 'node',
             hideUnschedulable: true
